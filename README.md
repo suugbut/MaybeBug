@@ -11,6 +11,7 @@ This repo is intentionally made simple to illustrate the issue.
 # Expected Behavior
 - Selecting a radio button will bind `MyControl` to a property in `MainPageViewModel`.
 - Pressing `Increase` button will increase the bound property.
+- `MyControl`'s `Label` displays the bound property.
 # Issue and How To Produce It
 - From any checked radio button, switch to the other one.
 - Press the `Increase` button at least once.

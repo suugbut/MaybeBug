@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MaybeBug"
+    x:Name="This"
+    x:Class="MaybeBug.MyControl">
+    <HorizontalStackLayout
+        Spacing="20"
+        BindingContext="{x:Reference This}"
+        x:DataType="{x:Type local:MyControl}">
+        <Button
+            Text="Increase"
+            Command="{Binding ViewModel.IncreaseCommand}" />
+        <Label
+            Text="{Binding ViewModel.Value}" />
+    </HorizontalStackLayout>
+</ContentView>

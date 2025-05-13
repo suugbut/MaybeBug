@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MaybeBug"
+    x:DataType="{x:Type local:MainPage+MainPageViewModel}"
+    x:Class="MaybeBug.MainPage">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <RadioButton
+            x:Name="rba"
+            Content="{Binding A, StringFormat='A: {0}'}"
+            CheckedChanged="RadioButton_CheckedChanged" />
+        <RadioButton
+            x:Name="rbb"
+            Content="{Binding B, StringFormat='B: {0}'}"
+            CheckedChanged="RadioButton_CheckedChanged" />
+        <local:MyControl
+            x:Name="mycontrol" />
+    </VerticalStackLayout>
+</ContentPage>
